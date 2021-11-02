@@ -1,13 +1,8 @@
 
-const char = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   '];
+const chars = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   '];
 let ms = 100;
-for (let i = 0; i < char.length; i++) {
+for (let i = 0; i < chars.length; i++) {
   setTimeout(() => {
-    i === char.length - 1 ? console.log(char[i]) : process.stdout.write(char[i]);
-    // if (i === char.length - 1) {
-    //   console.log(char[i]);
-    // } else {
-    //   process.stdout.write(char[i]);
-    // }
+    i === chars.length - 1 ? console.log(chars[i]) : process.stdout.write(chars[i]);
   }, ms += 200);
 }
